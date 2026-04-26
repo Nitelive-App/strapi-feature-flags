@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_flags",
+  "info": {
+    "singularName": "feature-flag",
+    "pluralName": "feature-flags",
+    "displayName": "Feature Flag"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description": {
+      "type": "text"
+    },
+    "Enabled": {
+      "type": "boolean",
+      "required": true
+    },
+    "Env": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "alpha",
+        "beta",
+        "full"
+      ]
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
